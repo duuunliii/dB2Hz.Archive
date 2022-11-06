@@ -1,0 +1,19 @@
+@import "./main.scss";
+
+.header {
+  font-family: $mainfont-light;
+  text-align: center;
+  font-size: 12px;
+  margin: 20px 0 50px 0;
+
+  .link {
+    font-family: $mainfont-bold;
+    color: gray;
+  }
+
+  @include responsive(T) {
+    font-size: 16px;
+    margin: 20px 0;
+    margin: 20px 0;
+  }
+}
