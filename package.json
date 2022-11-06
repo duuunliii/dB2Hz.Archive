@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  },
+  "name": "db2hz.archive",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "sass-lint": "^1.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w -r styles/main.scss ./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duuunliii/dB2Hz.Archive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duuunliii/dB2Hz.Archive/issues"
+  },
+  "homepage": "https://github.com/duuunliii/dB2Hz.Archive#readme"
+}
