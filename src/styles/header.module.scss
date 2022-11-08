@@ -2,18 +2,24 @@
 
 .header {
   font-family: $mainfont-light;
-  text-align: center;
-  font-size: 12px;
-  margin: 20px 0 50px 0;
+  text-align: left;
+  font-size: 8px;
+  margin: 5px 0 50px 0;
+  padding: 0 10px;
+  width: 100%;
+  color: gray;
 
   .link {
     font-family: $mainfont-bold;
-    color: gray;
+    font-size: 12px;
   }
 
+  @include flexbox(between, center);
   @include responsive(T) {
-    font-size: 16px;
-    margin: 20px 0;
-    margin: 20px 0;
+    font-size: 12px;
+
+    .link {
+      font-size: 16px;
+    }
   }
 }

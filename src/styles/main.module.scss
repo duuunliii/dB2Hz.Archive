@@ -1,52 +1,55 @@
 @import "./main.scss";
 
 .main {
-  overflow: hidden;
+  overflow: visible;
+
   h1 {
     width: 100px;
     font-family: "Times New Roman", Times, serif;
     display: block;
     position: relative;
-    font-size: 60px;
+    top: 30px;
+    font-size: 70px;
     background: linear-gradient(#c7ffb3 0%, #5fd5df 100%);
     background-clip: text;
     color: transparent;
   }
 
   .t1 {
+    //d
     left: 40%;
-    top: -10px;
   }
 
   .t2 {
-    left: 50%;
-    top: -40px;
+    //B
+    left: 45%;
   }
 
   .t3 {
-    left: 45%;
-    top: -40px;
+    //2
+    font-size: 40px;
   }
 
   .t4 {
-    left: 40%;
-    top: -55px;
+    //H
+    left: 33%;
   }
 
   .t5 {
-    left: 52%;
-    top: -90px;
+    //z
+    left: 45%;
   }
 
   .mainImg {
-    width: 90%;
-    max-width: 900px;
-    min-width: 500px;
-    margin: 0 auto;
     position: absolute;
-    top: 7%;
-    left: -5%;
-    right: 5%;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    background-image: url("../assets/img0.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1000px 550px;
+    pointer-events: none;
   }
 
   .paragraph {
@@ -57,18 +60,27 @@
   @include responsive(T) {
     h1 {
       font-size: 100px;
+      top: 0;
+    }
+
+    .t4 {
+      left: 38%;
+    }
+
+    .t5 {
+      top: -30px;
     }
 
     .mainImg {
-      top: 4%;
-      left: 5%;
-      right: 5%;
+      height: 500px;
+      background-size: 1300px 730px;
+      top: 30px;
     }
   }
 
   @include responsive(D) {
     .mainImg {
-      top: 0;
+      background-size: 1450px 830px;
     }
   }
 }

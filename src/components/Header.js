@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className={styles.header}>
-      <h3>Sound Photography by duuun</h3>
+      <h3>Sound Photography Project by Duuun</h3>
       <Link to={"/dB2Hz.archive/album"} className={styles.link}>
         Album
       </Link>
