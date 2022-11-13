@@ -1,0 +1,40 @@
+@import "./main.scss";
+
+.preview {
+  display: block;
+  width: 300px;
+  height: 350px;
+  margin: 5px;
+  color: $primary;
+
+  img {
+    width: 300px;
+  }
+
+  h1 {
+    font-family: $mainfont-bold;
+    font-size: 15px;
+  }
+
+  h3 {
+    font-family: $mainfont-light;
+  }
+
+  @include responsive(T) {
+    width: 250px;
+    height: 300px;
+    img {
+      width: 250px;
+    }
+  }
+}
+
+.closeBtn {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 2;
+  font-size: 30px;
+  color: white;
+}
