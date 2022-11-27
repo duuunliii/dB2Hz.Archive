@@ -1,5 +1,6 @@
 import Header from "../components/Header.js";
 import Main from "../components/Main";
+import Menu from "../components/Menu.js";
 
 function Home() {
   window.scrollTo(0, 0);
@@ -7,6 +8,7 @@ function Home() {
     <div>
       <Header />
       <Main />
+      <Menu />
     </div>
   );
 }

@@ -10,7 +10,7 @@
     position: relative;
     top: 30px;
     font-size: 70px;
-    background: linear-gradient(#c7ffb3 0%, #5fd5df 100%);
+    background: linear-gradient($green 0%, $yellow 80%);
     background-clip: text;
     color: transparent;
   }
@@ -59,7 +59,7 @@
 
   @include responsive(T) {
     h1 {
-      font-size: 100px;
+      font-size: 90px;
       top: 0;
     }
 

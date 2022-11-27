@@ -6,7 +6,7 @@
   padding: 10px;
   font-family: $mainfont-bold;
   font-size: 14px;
-  color: $primary;
+  color: $white;
 
   @include responsive(T) {
     font-size: 16px;

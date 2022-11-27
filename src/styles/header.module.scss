@@ -7,19 +7,7 @@
   margin: 5px 0 50px 0;
   padding: 0 10px;
   width: 100%;
-  color: $primary;
-
-  .link {
-    font-family: $mainfont-bold;
-    font-size: 14px;
-  }
+  color: $white;
 
   @include flexbox(between, center);
-  @include responsive(T) {
-    font-size: 12px;
-
-    .link {
-      font-size: 16px;
-    }
-  }
 }
