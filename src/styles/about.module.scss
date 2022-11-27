@@ -26,11 +26,32 @@
     width: 350px;
     height: 500px;
     margin: 100px auto;
-    padding: 20px;
+    padding: 28px;
     background-color: $white;
     overflow-y: scroll;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    color: $bgc;
+
+    .title {
+      margin-bottom: 20px;
+      font-family: $mainfont-bold;
+      font-size: 25px;
+    }
+
+    .paragraph {
+      font-size: 14px;
+
+      strong {
+        font-family: $mainfont-bold;
+      }
+    }
+
+    .atomImg {
+      display: block;
+      width: 130px;
+      margin: 30px auto;
+    }
   }
 
   .modal::-webkit-scrollbar {
@@ -39,8 +60,22 @@
 
   @include responsive(T) {
     .modal {
-      width: 750px;
+      width: 600px;
       height: 500px;
+      padding: 30px;
+
+      .title {
+        margin-bottom: 45px;
+        font-size: 30px;
+      }
+
+      .paragraph {
+        font-size: 16px;
+      }
+
+      .atomImg {
+        width: 170px;
+      }
     }
   }
 }

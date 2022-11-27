@@ -25,28 +25,34 @@
   .modal {
     flex-wrap: wrap;
     width: 350px;
-    height: 400px;
-    margin: 100px auto;
+    height: 500px;
+    margin: 70px auto 0;
     padding: 10px;
     background-color: $white;
 
-    .img1 {
-      display: block;
-      width: 80%;
-      margin: 0 10% 10px;
-      padding: 10px 0;
+    .imgs {
+      display: inline-block;
+      width: 60%;
     }
 
     .formula {
+      font-family: $mainfont-bold;
       font-size: 15px;
+
+      .atomNum {
+        font-size: 13px;
+        position: relative;
+        top: 3px;
+      }
     }
 
     .place {
-      font-size: 20px;
+      font-size: 14px;
     }
 
+    .date,
     .time {
-      font-size: 15px;
+      font-size: 12px;
     }
   }
 
@@ -55,9 +61,27 @@
       width: 750px;
       height: 500px;
 
-      .img1 {
+      .imgs {
         width: 45%;
-        margin: 0 0 30px 10px;
+        margin: 0 0 50px 10px;
+        padding: 0 10px;
+      }
+
+      .formula {
+        font-size: 15px;
+
+        .atomNum {
+          font-size: 13px;
+        }
+      }
+
+      .place {
+        font-size: 20px;
+      }
+
+      .date,
+      .time {
+        font-size: 15px;
       }
     }
   }

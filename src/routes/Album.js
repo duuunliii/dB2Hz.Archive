@@ -31,6 +31,7 @@ function Album() {
             img1={data.img1}
             img2={data.img2}
             place={data.place}
+            date={data.date}
             time={data.time}
             dB={data.dB}
             Hz={data.Hz}

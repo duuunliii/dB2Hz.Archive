@@ -30,8 +30,8 @@
   .closeBtn {
     display: block;
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 20px;
+    right: 20px;
     z-index: 2;
     font-size: 30px;
     color: white;
@@ -46,6 +46,10 @@
     .albumLink:hover,
     .aboutBtn:hover {
       font-size: 24px;
+    }
+
+    .closeBtn {
+      right: 50px;
     }
   }
 }

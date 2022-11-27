@@ -18,12 +18,12 @@
 
   .t1 {
     //d
-    left: 40%;
+    left: 45%;
   }
 
   .t2 {
     //B
-    left: 45%;
+    left: 41%;
   }
 
   .t3 {
@@ -33,7 +33,7 @@
 
   .t4 {
     //H
-    left: 33%;
+    left: 47%;
   }
 
   .t5 {
@@ -46,10 +46,11 @@
     top: 0;
     width: 100%;
     height: 500px;
+    margin: auto;
     background-image: url("../assets/img0.gif");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1000px 550px;
+    background-size: 1000px 1000px;
     pointer-events: none;
   }
 
@@ -60,12 +61,12 @@
 
   @include responsive(T) {
     h1 {
-      font-size: 90px;
+      font-size: 80px;
       top: 0;
     }
 
     .t4 {
-      left: 38%;
+      left: 47%;
     }
 
     .t5 {
@@ -73,15 +74,7 @@
     }
 
     .mainImg {
-      height: 500px;
-      background-size: 1300px 730px;
-      top: 30px;
-    }
-  }
-
-  @include responsive(D) {
-    .mainImg {
-      background-size: 1450px 830px;
+      background-size: 1100px 1100px;
     }
   }
 }

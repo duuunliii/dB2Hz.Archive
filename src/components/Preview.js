@@ -4,7 +4,7 @@ import styles from "../styles/preview.module.scss";
 import Detail from "./Detail";
 import Data from "../Data";
 
-function Preview({ id, img1, img2, place, time, dB, Hz }) {
+function Preview({ id, img1, img2, place, date, time, dB, Hz }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -13,7 +13,8 @@ function Preview({ id, img1, img2, place, time, dB, Hz }) {
         <img src={img1} alt={place}></img>
         <h1>📍 {place}</h1>
         <h3>
-          ◽️ dB{dB}Hz{Hz}
+          dB<span className={styles.atomNum}>{dB}</span>Hz
+          <span className={styles.atomNum}>{Hz}</span>
         </h3>
       </button>
 
@@ -29,6 +30,7 @@ function Preview({ id, img1, img2, place, time, dB, Hz }) {
         img1={img1}
         img2={img2}
         place={place}
+        date={date}
         time={time}
         dB={dB}
         Hz={Hz}
@@ -43,6 +45,7 @@ Preview.propTypes = {
   img1: PropTypes.string.isRequired,
   img2: PropTypes.string.isRequired,
   place: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   dB: PropTypes.number.isRequired,
   Hz: PropTypes.number.isRequired,
