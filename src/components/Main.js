@@ -1,5 +1,6 @@
 import styles from "../styles/main.module.scss";
 import mainImg from "../assets/img0.gif";
+import Menu from "./Menu";
 
 function Main() {
   return (
@@ -11,8 +12,6 @@ function Main() {
       <h1 className={styles.t4}>H</h1>
       <h1 className={styles.t5}>z</h1>
       <div className={styles.mainImg}></div>
-      {/* <img src={mainImg} className={styles.mainImg}></img> */}
-      {/* <p className={styles.paragraph}>가나다라마바사</p> */}
     </div>
   );
 }

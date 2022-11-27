@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Preview from "../components/Preview";
-import Detail from "../components/Detail";
 import Data from "../Data";
 import styles from "../styles/album.module.scss";
 
@@ -33,7 +32,8 @@ function Album() {
             img2={data.img2}
             place={data.place}
             time={data.time}
-            formula={data.formula}
+            dB={data.dB}
+            Hz={data.Hz}
           />
         ))}
       </div>

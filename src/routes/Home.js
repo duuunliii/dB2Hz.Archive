@@ -1,6 +1,6 @@
-import Header from "../components/Header.js";
+import Header from "../components/Header";
 import Main from "../components/Main";
-import Menu from "../components/Menu.js";
+import Menu from "../components/Menu";
 
 function Home() {
   window.scrollTo(0, 0);
