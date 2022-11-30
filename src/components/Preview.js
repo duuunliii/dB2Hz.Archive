@@ -3,8 +3,9 @@ import { useState, useEffect } from "react";
 import styles from "../styles/preview.module.scss";
 import Detail from "./Detail";
 import Data from "../Data";
+import closeBtnImg from "../assets/closeBtn.png";
 
-function Preview({ id, img1, img2, place, date, time, dB, Hz }) {
+function Preview({ id, img1, img2, gif, place, date, time, dB, Hz }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -20,7 +21,7 @@ function Preview({ id, img1, img2, place, date, time, dB, Hz }) {
 
       {open ? (
         <button className={styles.closeBtn} onClick={() => setOpen(false)}>
-          x
+          <img src={closeBtnImg}></img>
         </button>
       ) : null}
 
@@ -29,6 +30,7 @@ function Preview({ id, img1, img2, place, date, time, dB, Hz }) {
         id={id}
         img1={img1}
         img2={img2}
+        gif={gif}
         place={place}
         date={date}
         time={time}
@@ -44,6 +46,7 @@ Preview.propTypes = {
   id: PropTypes.number.isRequired,
   img1: PropTypes.string.isRequired,
   img2: PropTypes.string.isRequired,
+  gif: PropTypes.string.isRequired,
   place: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,

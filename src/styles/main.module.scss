@@ -2,79 +2,42 @@
 
 .main {
   overflow: visible;
-  margin-bottom: 80px;
-
-  h1 {
-    width: 100px;
-    font-family: "Times New Roman", Times, serif;
-    display: block;
-    position: relative;
-    top: 30px;
-    font-size: 70px;
-    background: linear-gradient($green 0%, $yellow 80%);
-    background-clip: text;
-    color: transparent;
-  }
-
-  .t1 {
-    //d
-    left: 45%;
-  }
-
-  .t2 {
-    //B
-    left: 41%;
-  }
-
-  .t3 {
-    //2
-    font-size: 40px;
-  }
-
-  .t4 {
-    //H
-    left: 47%;
-  }
-
-  .t5 {
-    //z
-    left: 45%;
-  }
+  margin-bottom: 100px;
 
   .mainImg {
-    position: absolute;
+    display: block;
     top: 0;
-    width: 100%;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     margin: auto;
-    background-image: url("../assets/img0.gif");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 1000px 1000px;
     pointer-events: none;
   }
 
-  .paragraph {
-    font-family: $mainfont-light;
+  .place {
+    font-family: $mainfont-bold;
+    color: $white;
     text-align: center;
+    font-size: 12px;
+  }
+
+  .formula {
+    font-family: $mainfont-bold;
+    color: $white;
+    text-align: center;
+    font-size: 12px;
+
+    .atomNum {
+      position: relative;
+      top: 2px;
+      font-size: 8px;
+    }
   }
 
   @include responsive(T) {
-    h1 {
-      font-size: 80px;
-      top: 0;
-    }
-
-    .t4 {
-      left: 47%;
-    }
-
-    .t5 {
-      top: -30px;
-    }
-
+    margin-bottom: 70px;
     .mainImg {
-      background-size: 1100px 1100px;
+      width: 400px;
+      height: 400px;
     }
   }
 }

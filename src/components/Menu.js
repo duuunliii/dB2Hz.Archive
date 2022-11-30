@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/menu.module.scss";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import About from "./About";
+import closeBtnImg from "../assets/closeBtn.png";
 
 function Menu() {
   const [open, setOpen] = useState(false);
@@ -13,10 +14,13 @@ function Menu() {
       </button>
       {open ? (
         <button className={styles.closeBtn} onClick={() => setOpen(false)}>
-          x
+          <img src={closeBtnImg}></img>
         </button>
       ) : null}
       <About open={open} />
+      {/* <button className={styles.aboutBtn} onClick={() => setOpen(true)}>
+        Detail
+      </button> */}
       <Link to={"/dB2Hz.archive/album"} className={styles.albumLink}>
         Album
       </Link>

@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import styles from "../styles/detail.module.scss";
 
-function Detail({ id, img1, img2, place, date, time, dB, Hz, open }) {
+function Detail({ id, img1, img2, gif, place, date, time, dB, Hz, open }) {
   return (
-    <div className={open ? styles.open : styles.close}>
+    <div className={open ? `${styles.isActive} ${styles.close}` : styles.close}>
       <div className={styles.modal}>
-        <img src={img1} className={styles.imgs}></img>
+        <img src={gif} className={styles.imgs}></img>
         <img src={img2} className={styles.imgs}></img>
         <h1 className={styles.formula}>
           dB<span className={styles.atomNum}>{dB}</span>Hz
@@ -23,6 +23,7 @@ Detail.propTypes = {
   id: PropTypes.number.isRequired,
   img1: PropTypes.string.isRequired,
   img2: PropTypes.string.isRequired,
+  gif: PropTypes.string.isRequired,
   place: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,

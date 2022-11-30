@@ -30,6 +30,7 @@ function Album() {
             id={data.id}
             img1={data.img1}
             img2={data.img2}
+            gif={data.gif}
             place={data.place}
             date={data.date}
             time={data.time}

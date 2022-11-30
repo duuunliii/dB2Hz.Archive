@@ -2,11 +2,7 @@
 
 .close {
   position: absolute;
-  visibility: hidden;
   transform: translate3d(0, 100vh, 0) scale(1, 0.1);
-}
-
-.open {
   display: block;
   position: absolute;
   top: 0;
@@ -15,47 +11,52 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
-  color: $bgc;
+  color: $white;
   text-align: center;
-  font-family: $mainfont-light;
-  visibility: visible;
-  transform: translate3d(0, 0, 0) scale(1, 1);
+  font-family: $mainfont-bold;
   transition: transform 500ms ease-in-out;
+
+  .modal::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.isActive {
+    transform: translate3d(0, 0, 0) scale(1, 1);
+  }
 
   .modal {
     width: 350px;
     height: 500px;
     margin: 100px auto;
     padding: 28px;
-    background-color: $white;
+    background-color: $bgc;
     overflow-y: scroll;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-    color: $bgc;
+    color: $white;
 
     .title {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       font-family: $mainfont-bold;
-      font-size: 25px;
+      font-size: 22px;
+
+      .atomNum {
+        position: relative;
+        top: 2px;
+        font-size: 16px;
+      }
     }
 
     .paragraph {
-      font-size: 14px;
-
-      strong {
-        font-family: $mainfont-bold;
-      }
+      font-size: 12px;
+      margin-bottom: 20px;
     }
 
     .atomImg {
       display: block;
-      width: 130px;
-      margin: 30px auto;
+      width: 300px;
+      margin: auto;
     }
-  }
-
-  .modal::-webkit-scrollbar {
-    display: none;
   }
 
   @include responsive(T) {
@@ -66,15 +67,7 @@
 
       .title {
         margin-bottom: 45px;
-        font-size: 30px;
-      }
-
-      .paragraph {
-        font-size: 16px;
-      }
-
-      .atomImg {
-        width: 170px;
+        font-size: 25px;
       }
     }
   }
